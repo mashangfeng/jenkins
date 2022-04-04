@@ -7,4 +7,9 @@ pipeline {
             }
         }
     }
+    post {
+        changed {
+            mail to "wangyijiewan@163.com" subject: "Jenkins test"
+        }
+    }
 }
